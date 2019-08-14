@@ -1,8 +1,0 @@
-Get-CsAdUser -OU  ""  | Enable-CsUser -RegistrarPool "lyncpool-mc.gf.com.cn" -SipAddressType EmailAddress -SipDomain gf.com.cn
-
-Set-CsUser -EnterpriseVoiceEnabled $true
-
-import-csv d:yl\LyncUser.csv | Foreach { Set-CsUser -Identity $_.name -LineURI $_.uri }
-
-
-https://www.ucunleashed.com/269
